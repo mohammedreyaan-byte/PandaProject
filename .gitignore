@@ -1,4 +1,10 @@
+#Ignored Files
 pyproject.toml
-/.venv/
 .env
+uv.lock
+
+
+
+#Directories Hidden:
 /.idea/
+/.venv/
