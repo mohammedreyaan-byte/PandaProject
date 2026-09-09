@@ -77,7 +77,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'weather_db',
         'USER': 'postgres',
-        'PASSWORD': 'reyaan2007',
+        'PASSWORD': '1234',
         'HOST': 'localhost',
         'PORT': '5432',
     }
