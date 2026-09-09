@@ -23,6 +23,8 @@ class WriteService:
                 Data.pressure_hpa,
                 Data.weather_condition
             ])
+            #Django ORM used
+
             DjangoWeatherData.objects.create(
                 date=Data.date,
                 city=Data.city,
