@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'dbmodel',
+    'src.ORM.dbmodel',
 ]
 
 MIDDLEWARE = [
@@ -77,7 +77,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'weather_db',
         'USER': 'postgres',
-        'PASSWORD': '1234',
+        'PASSWORD': 'reyaan2007',
         'HOST': 'localhost',
         'PORT': '5432',
     }
