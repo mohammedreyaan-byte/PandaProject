@@ -1,8 +1,24 @@
-#Import Section
+#Import Section Django Environ
+import os
+import django
+
+#Django Startup
+os.environ.setdefault(
+    "DJANGO_SETTINGS_MODULE",
+    "src.ORM.weatherproject.settings"
+)
+
+django.setup()
+
+#Normal Imports
 import pandas as pd
 from src.Service.ReadService import ReadService
 from src.Service.WriteService import WriteService
 from src.Models.WeatherData import WeatherData
+
+
+
+
 
 
 #Reading CSV from Data
@@ -50,7 +66,7 @@ elif takingInput==4:
     writeService = WriteService()
     weatherData = WeatherData(date,city,temperature_c,humidity_percent,rainfall_mm,wind_speed_kmh,pressure_hpa,weather_condition)
     writeService.addData(weatherData)
-
+    print("The Data is Added to the database successfully")
 
 
 

@@ -1,6 +1,7 @@
 #imports
 import csv
 from Models.WeatherData import WeatherData
+from src.ORM.dbmodel.models import DjangoWeatherData
 
 
 class WriteService:
@@ -22,6 +23,16 @@ class WriteService:
                 Data.pressure_hpa,
                 Data.weather_condition
             ])
+            DjangoWeatherData.objects.create(
+                date=Data.date,
+                city=Data.city,
+                temperature_c=Data.temperature_c,
+                humidity_percent=Data.humidity_percent,
+                rainfall_mm=Data.rainfall_mm,
+                wind_speed_kmh=Data.wind_speed_kmh,
+                pressure_hpa=Data.pressure_hpa,
+                weather_condition=Data.weather_condition
+            )
 
 
 
