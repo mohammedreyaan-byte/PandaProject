@@ -7,4 +7,3 @@ uv.lock
 #Directories Hidden:
 /.idea/
 /.venv/
-/src/Data/
