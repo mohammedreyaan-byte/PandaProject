@@ -1,5 +1,4 @@
 #Ignored Files
-pyproject.toml
 .env
 uv.lock
 
