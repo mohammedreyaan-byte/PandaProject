@@ -47,6 +47,7 @@ elif takingInput==2:
     readService = ReadService(df)
     readService.printLastFive()
 
+
 #3rd Function
 elif takingInput==3:
     a=input("Enter city name\n")
@@ -54,6 +55,7 @@ elif takingInput==3:
     readService.printCityReport(a)
 
 #4th Function
+
 elif takingInput==4:
     date=input("Enter date in format YYYY-MM-DD\n")
     city=input("Enter city name\n")
