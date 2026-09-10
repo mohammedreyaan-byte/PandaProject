@@ -24,6 +24,7 @@ from src.Models.WeatherData import WeatherData
 #Reading CSV from Data
 df=pd.read_csv("../Data/WeatherData.csv")
 
+
 #Object Instantiation
 
 
